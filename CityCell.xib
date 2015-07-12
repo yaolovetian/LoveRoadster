@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CityCell" id="B23-Bh-BDl" customClass="CityCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_time.png" translatesAutoresizingMaskIntoConstraints="NO" id="gCs-2U-qRI">
+                        <rect key="frame" x="20" y="180" width="16" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="ghs-lp-t2A"/>
+                            <constraint firstAttribute="height" constant="15" id="hDu-Jf-gG6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg2-lC-gQy">
+                        <rect key="frame" x="44" y="181" width="156" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xoh-nN-kVG">
+                        <rect key="frame" x="4" y="2" width="193" height="125"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="QeJ-pn-q36"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9q-tm-KfI">
+                        <rect key="frame" x="6" y="130" width="186" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="0Q1-8p-YJK"/>
+                            <constraint firstAttribute="width" constant="186" id="iBa-88-iFp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Q1-8p-YJK"/>
+                                <exclude reference="iBa-88-iFp"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="F9q-tm-KfI" firstAttribute="top" secondItem="Xoh-nN-kVG" secondAttribute="bottom" constant="3" id="61U-fm-1fb"/>
+                <constraint firstItem="gCs-2U-qRI" firstAttribute="leading" secondItem="B23-Bh-BDl" secondAttribute="leading" constant="20" id="BSu-tF-5VX"/>
+                <constraint firstItem="Xoh-nN-kVG" firstAttribute="leading" secondItem="B23-Bh-BDl" secondAttribute="leading" constant="4" id="DhM-oo-ML6"/>
+                <constraint firstAttribute="bottom" secondItem="gCs-2U-qRI" secondAttribute="bottom" constant="5" id="FAc-qD-iXL"/>
+                <constraint firstAttribute="trailing" secondItem="F9q-tm-KfI" secondAttribute="trailing" constant="8" id="PM8-mg-HoU"/>
+                <constraint firstAttribute="bottom" secondItem="pg2-lC-gQy" secondAttribute="bottom" constant="5" id="QW2-Cd-Y5G"/>
+                <constraint firstAttribute="trailing" secondItem="F9q-tm-KfI" secondAttribute="trailing" constant="8" id="TQt-9c-dAz"/>
+                <constraint firstItem="F9q-tm-KfI" firstAttribute="leading" secondItem="B23-Bh-BDl" secondAttribute="leading" constant="6" id="Vmn-aY-duO"/>
+                <constraint firstAttribute="trailing" secondItem="Xoh-nN-kVG" secondAttribute="trailing" constant="3" id="XDX-mV-Rcj"/>
+                <constraint firstItem="Xoh-nN-kVG" firstAttribute="top" secondItem="B23-Bh-BDl" secondAttribute="top" constant="2" id="YDK-dO-g8j"/>
+                <constraint firstAttribute="trailing" secondItem="pg2-lC-gQy" secondAttribute="trailing" id="d70-N4-lSb"/>
+                <constraint firstItem="pg2-lC-gQy" firstAttribute="leading" secondItem="gCs-2U-qRI" secondAttribute="trailing" constant="8" id="t8C-hV-pRO"/>
+            </constraints>
+            <size key="customSize" width="200" height="150"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="PM8-mg-HoU"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="CreatDateLabel" destination="pg2-lC-gQy" id="K63-sH-tZO"/>
+                <outlet property="ImageUrlView" destination="Xoh-nN-kVG" id="DFC-4V-c83"/>
+                <outlet property="TitleLabel" destination="F9q-tm-KfI" id="g2K-ue-cnc"/>
+            </connections>
+            <point key="canvasLocation" x="516" y="308"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_time.png" width="24" height="24"/>
+    </resources>
+</document>
